@@ -1,0 +1,49 @@
+@use "../setting"as *;
+@use "mixin"as m;
+
+.top_button{
+  @include m.position-r(5%,5%);
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+  @include m.flex;
+  a{
+    @include m.flex;
+    flex-direction: column;
+    background-color: purple;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    color: white;
+  }
+}
+
+.service_button{
+  @include m.position-r(0,5%);
+  display: inline-block;
+  border: solid 1px black;
+  width: 150px;
+  text-align: center;
+  a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 2.5;
+    color: goldenrod;
+    font-weight: bold;
+    box-shadow: 0 3px 8px #666;
+  }
+}
+
+.about_button{
+    @include m.position-r(10%,0);
+    display: inline-block;
+    border-bottom: 2px solid white;
+    a{
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: white;
+    }
+  }

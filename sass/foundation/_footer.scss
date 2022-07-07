@@ -1,0 +1,43 @@
+@use "../global"as *;
+
+.footer{
+  margin-top: 10%;
+  background: navy;
+  height: 30vh;
+  @include flex;
+  &_inner{
+    width: 100%;
+    @include flex(space-between);
+    background: navy;
+    border-top: 2px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
+    padding: 3% 10%;
+  }
+  &_left{
+    width: 30%;
+  }
+  &_right{
+    width: 50%
+  }
+  &_nav{
+    &Inner{
+      @include flex(end);
+    }
+    &Item{
+      margin-left: 5%;
+      a{
+        color: white;
+      }
+    }
+  }
+  &_info{
+    &Item{
+      color: white;
+      line-height: 1.5;
+      border-left: 2px solid white;
+      p{
+        margin-left: 10%;
+      }
+    }
+  }
+}

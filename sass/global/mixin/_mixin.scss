@@ -1,0 +1,34 @@
+
+@mixin flex($nocenter:center,$noalign:center) {
+  display: flex;
+  justify-content: $nocenter;
+  align-items: $noalign;
+}
+
+@mixin position($top:50%,$left:50%) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-50%,-50%);
+}
+
+@mixin position-r($bottom:0,$right:0) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin ttl {
+  font-size: 2rem;
+    color: #999;
+    margin-bottom: 2%;
+    span{
+      color: navy;
+    }
+}
