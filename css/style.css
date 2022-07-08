@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 div,
@@ -392,6 +393,139 @@ html {
 }
 .footer_infoItem p {
   margin-left: 10%;
+}
+
+.info {
+  margin-top: 5%;
+}
+.info_inner {
+  background: navy;
+  text-align: center;
+  padding: 3% 0;
+}
+.info_inner p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.tell {
+  width: 90%;
+  margin: 5% auto;
+}
+.tell_ttl {
+  font-size: 2rem;
+  color: #999;
+  margin-bottom: 2%;
+}
+.tell_ttl span {
+  color: navy;
+}
+.tell_txt {
+  width: 90%;
+  margin: 0 auto;
+  background: #999;
+  text-align: center;
+  padding: 3% 0;
+}
+.tell_txtName {
+  color: navy;
+  font-size: 1.2rem;
+}
+.tell_txtTel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  line-height: 3;
+}
+.tell_txtTime {
+  font-size: 1.2rem;
+}
+
+.mail {
+  width: 90%;
+  margin: 0 auto;
+}
+.mail_ttl {
+  font-size: 2rem;
+  color: #999;
+  margin-bottom: 2%;
+}
+.mail_ttl span {
+  color: navy;
+}
+.mail_form {
+  width: 90%;
+  margin: 0 auto;
+  background: #999;
+  padding: 3%;
+}
+.mail_formItem {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1%;
+  position: relative;
+}
+.mail_formItem:nth-of-type(1)::before {
+  display: none;
+}
+.mail_formItem:nth-of-type(8)::before {
+  display: none;
+}
+.mail_formItem:nth-of-type(9)::before {
+  display: none;
+}
+.mail_formItem:nth-of-type(10)::before {
+  display: none;
+}
+.mail_formItem:nth-of-type(11)::before {
+  display: none;
+}
+.mail_formItem:nth-of-type(12) {
+  align-items: flex-start;
+}
+.mail_formItem:nth-of-type(12)::before {
+  display: none;
+}
+.mail_formItem::before {
+  content: "必須";
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  background: white;
+  color: red;
+  font-size: 1.2rem;
+  padding: 1%;
+}
+.mail_formItem label {
+  width: 50%;
+  font-size: 1.5rem;
+}
+.mail_formItem select {
+  width: 30%;
+  font-size: 1.2rem;
+  padding: 1%;
+  background: aqua;
+}
+.mail_formItem input {
+  width: 50%;
+  padding: 1%;
+  font-size: 1.2rem;
+  background: aqua;
+  position: relative;
+}
+.mail_formItem textarea {
+  width: 50%;
+  background: aqua;
+  font-size: 1.2rem;
+}
+.mail_form p {
+  font-size: 1.8rem;
+  margin: 3% 0;
 }
 
 .ideal_ttl {
