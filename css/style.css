@@ -1,72 +1,3 @@
-.top_button {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.top_button a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: purple;
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  color: white;
-}
-
-.service_button {
-  position: absolute;
-  bottom: 0;
-  right: 5%;
-  display: inline-block;
-  border: solid 1px black;
-  width: 150px;
-  text-align: center;
-}
-.service_button a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  line-height: 2.5;
-  color: goldenrod;
-  font-weight: bold;
-  box-shadow: 0 3px 8px #666;
-}
-
-.about_button {
-  position: absolute;
-  bottom: 10%;
-  right: 0;
-  display: inline-block;
-  border-bottom: 2px solid white;
-}
-.about_button a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: white;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  counter-reset: number 0;
-}
-
-a {
-  color: black;
-}
-
 html,
 body,
 div,
@@ -237,6 +168,94 @@ hr {
 input,
 select {
   vertical-align: middle;
+}
+
+.top_button {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top_button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: purple;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  color: white;
+}
+
+.service_button {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  display: inline-block;
+  border: solid 1px black;
+  width: 150px;
+  text-align: center;
+}
+.service_button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 2.5;
+  color: goldenrod;
+  font-weight: bold;
+  box-shadow: 0 3px 8px #666;
+}
+
+.about_button {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  display: inline-block;
+  border-bottom: 2px solid white;
+}
+.about_button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  counter-reset: number 0;
+}
+
+a {
+  color: black;
+}
+
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 .header_inner {

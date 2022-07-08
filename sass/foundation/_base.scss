@@ -12,3 +12,15 @@ a{
   color: black;
 }
 
+html{
+  font-size: 16px;
+  @include mq(pc){
+    font-size: 15px;
+  }
+  @include mq(tab){
+    font-size: 14px;
+  }
+  @include mq(sp){
+    font-size: 12px;
+  }
+}
