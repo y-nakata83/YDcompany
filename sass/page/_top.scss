@@ -1,0 +1,299 @@
+@use "../global" as *;
+
+.top {
+  width: 100%;
+  height: 70vh;
+
+  &_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../../img/top-bg.png);
+    @include bg;
+  }
+
+  &_txt {
+    width: 100%;
+    text-align: center;
+    @include position;
+    color: goldenrod;
+  }
+
+  &_copy {
+    font-size: 3.5rem;
+    text-shadow: white 2px 2px;
+
+    span {
+      font-size: 2em;
+    }
+  }
+
+  &_ex {
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.service {
+  margin-top: 5%;
+
+  &_inner {
+    padding: 0 5%;
+  }
+
+  &_top {
+    @include flex;
+
+    &Left {
+      width: 50%;
+    }
+
+    &Right {
+      position: relative;
+      width: 50%;
+      text-align: center;
+      opacity: .8;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 40%;
+        height: 100%;
+        background: url(../img/service-img2.png);
+        @include bg;
+        @include position-r(-80%, 0)
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  &_ttl {
+    @include ttl;
+  }
+
+  &_ex {
+    padding-left: 5%;
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+    text-align: justify;
+    line-height: 1.2;
+  }
+
+  &_bottom {
+    position: relative;
+  }
+
+  &_item {
+    width: 50%;
+    background: navy;
+    clip-path: polygon(0 0, 85% 0, 95% 100%, 0% 100%);
+    font-size: 1.5rem;
+    line-height: 3;
+    color: white;
+    padding-left: 8%;
+    position: relative;
+    margin-bottom: 1%;
+    left: 3%;
+
+    &::before {
+      @include position(50%, 8%);
+      counter-increment: number 1;
+      content: "0" counter(number);
+    }
+
+    &:nth-child(2) {
+      left: 6%;
+    }
+
+    &:nth-child(3) {
+      left: 9%;
+    }
+
+    &:nth-child(4) {
+      left: 12%;
+    }
+  }
+}
+
+.frow {
+  margin-top: 5%;
+
+  &_inner {
+    background: url(../img/flow-bg.png);
+    @include bg;
+    padding: 3% 5%;
+  }
+
+  &_ttl {
+    @include ttl;
+    color: navy;
+  }
+
+  &_list {
+    @include flex(center, start);
+  }
+
+  &_item {
+    position: relative;
+    width: 12%;
+    height: 400px;
+    background: navy;
+    clip-path: polygon(70% 0, 100% 50%, 70% 100%, 0 100%, 0 0);
+    color: white;
+
+    img {
+      @include position(10%, 40%);
+    }
+  }
+
+  &_single {
+    @include position(50%, 40%);
+
+    p {
+      writing-mode: vertical-lr;
+      font-size: 1.3rem;
+    }
+  }
+
+  &_flex {
+    @include position(50%, 40%);
+    @include flex(center, start);
+    line-height: 1.5;
+
+    p {
+      writing-mode: vertical-rl;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.about {
+  margin-top: 5%;
+
+  &_ttl {
+    @include ttl;
+    margin-left: 5%;
+  }
+
+  &_bg {
+    position: relative;
+    background-color: rgb(79, 185, 226);
+    opacity: .8;
+    height: 230px;
+
+    &::before {
+      content: "01  02  03";
+      display: block;
+      width: 100%;
+      @include position;
+      color: white;
+      opacity: .2;
+      font-size: 20vw;
+      text-align: center;
+      z-index: -1;
+    }
+  }
+
+  &_list {
+    @include flex(space-around);
+    height: 100%;
+  }
+
+  &_item {
+    text-align: center;
+    height: 100%;
+    width: 20%;
+    position: relative;
+  }
+
+  &_txt {
+    width: 100%;
+    @include position;
+    display: block;
+
+    &Ttl {
+      font-size: 2rem;
+      color: navy;
+      margin-bottom: 5%;
+    }
+  }
+
+  &_ex {
+    @include flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: white;
+
+    span {
+      font-size: .6em;
+    }
+  }
+}
+
+.contact {
+  margin-top: 5%;
+
+  &_ttl {
+    @include ttl;
+    margin-left: 5%
+  }
+
+  &_box {
+    @include flex(space-around);
+  }
+
+  &_left,
+  &_right {
+    background: #ccc;
+    width: 40%;
+    height: 250px;
+    padding: 2%;
+    flex-direction: column;
+    text-align: center;
+
+    &Ttl {
+      font-size: 1.3rem;
+      color: navy;
+      border-bottom: 1px solid goldenrod;
+      width: 60%;
+      margin: 0 auto;
+
+      span {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &_txt,
+  &_mail {
+    @include flex;
+    flex-direction: column;
+    height: 100%;
+
+    a {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+
+  &_name {
+    color: navy;
+    font-size: 1.2rem;
+  }
+
+  &_tel {
+    @include flex;
+    font-size: 2.5rem;
+    line-height: 2;
+  }
+
+  &_time {
+    font-size: 1.2rem;
+  }
+}
