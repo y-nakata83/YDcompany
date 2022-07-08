@@ -394,6 +394,33 @@ html {
   margin-left: 10%;
 }
 
+.ideal_ttl {
+  font-size: 2rem;
+  color: #999;
+  margin-bottom: 2%;
+}
+.ideal_ttl span {
+  color: navy;
+}
+
+.president_ttl {
+  font-size: 2rem;
+  color: #999;
+  margin-bottom: 2%;
+}
+.president_ttl span {
+  color: navy;
+}
+
+.history_ttl {
+  font-size: 2rem;
+  color: #999;
+  margin-bottom: 2%;
+}
+.history_ttl span {
+  color: navy;
+}
+
 .top {
   width: 100%;
   height: 70vh;
@@ -590,7 +617,7 @@ html {
 }
 .about_bg {
   position: relative;
-  background-color: #4fb9e2;
+  background-color: rgb(79, 185, 226);
   opacity: 0.8;
   height: 230px;
 }
@@ -707,5 +734,3 @@ html {
 .contact_time {
   font-size: 1.2rem;
 }
-
-/*# sourceMappingURL=style.css.map */

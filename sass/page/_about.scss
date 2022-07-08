@@ -1,0 +1,17 @@
+@use "../global" as *;
+
+.ideal {
+  &_ttl {
+    @include ttl;
+  }
+}
+.president {
+  &_ttl {
+    @include ttl;
+  }
+}
+.history {
+  &_ttl {
+    @include ttl;
+  }
+}
