@@ -98,10 +98,10 @@
       }
       label{
         width: 50%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
       select{
-        width: 30%;
+        width: 50%;
         font-size: 1.2rem;
         padding: 1%;
         background: aqua;
@@ -112,6 +112,12 @@
         font-size: 1.2rem;
         background: aqua;
         position: relative;
+        border: none;
+        &:focus{
+          background: white;
+          border: 2px solid aqua;
+          outline: 0;
+        }
       }
       textarea{
         width: 50%;
@@ -120,7 +126,7 @@
       }
     }
     p{
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       margin: 3% 0;
     }
   }
