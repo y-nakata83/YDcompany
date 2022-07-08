@@ -1,2 +1,127 @@
 @use "../global"as *;
 
+.info{
+  margin-top: 5%;
+  &_inner{
+    background: navy;
+    text-align: center;
+    padding: 3% 0;
+    p{
+      color: white;
+      font-size: 1.5rem;
+      line-height: 2;
+    }
+  }
+}
+
+.tell{
+  width: 90%;
+  margin: 5% auto;
+  &_ttl{
+    @include ttl;
+  }
+  &_txt{
+    width: 90%;
+    margin: 0 auto;
+    background: #999;
+    text-align: center;
+    padding: 3% 0;
+    &Name{
+      color: navy;
+      font-size: 1.2rem;
+    }
+    &Tel{
+      @include flex;
+      font-size: 2.5rem;
+      line-height: 3;
+    }
+    &Time{
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.mail{
+  width: 90%;
+  margin: 0 auto;
+  &_ttl{
+    @include ttl;
+  }
+  &_form{
+    width: 90%;
+    margin: 0 auto;
+    background: #999;
+    padding: 3%;
+    &Item{
+      @include flex(start);
+      margin-bottom: 1%;
+      position: relative;
+      &:nth-of-type(1){
+        &::before{
+          display: none;
+        }
+      }
+      &:nth-of-type(8){
+        &::before{
+          display: none;
+        }
+      }
+      &:nth-of-type(9){
+        &::before{
+          display: none;
+        }
+      }
+      &:nth-of-type(10){
+        &::before{
+          display: none;
+        }
+      }
+      &:nth-of-type(11){
+        &::before{
+          display: none;
+        }
+      }
+      &:nth-of-type(12){
+        align-items: flex-start;
+        &::before{
+          display: none;
+        }
+      }
+      &::before{
+        content: "必須";
+        @include position(50%,45%);
+        display: inline-block;
+        background: white;
+        color: red;
+        font-size: 1.2rem;
+        padding: 1%;
+      }
+      label{
+        width: 50%;
+        font-size: 1.5rem;
+      }
+      select{
+        width: 30%;
+        font-size: 1.2rem;
+        padding: 1%;
+        background: aqua;
+      }
+      input{
+        width: 50%;
+        padding: 1%;
+        font-size: 1.2rem;
+        background: aqua;
+        position: relative;
+      }
+      textarea{
+        width: 50%;
+        background: aqua;
+        font-size: 1.2rem;
+      }
+    }
+    p{
+      font-size: 1.8rem;
+      margin: 3% 0;
+    }
+  }
+}
