@@ -503,10 +503,10 @@ html {
 }
 .mail_formItem label {
   width: 50%;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .mail_formItem select {
-  width: 30%;
+  width: 50%;
   font-size: 1.2rem;
   padding: 1%;
   background: aqua;
@@ -517,6 +517,12 @@ html {
   font-size: 1.2rem;
   background: aqua;
   position: relative;
+  border: none;
+}
+.mail_formItem input:focus {
+  background: white;
+  border: 2px solid aqua;
+  outline: 0;
 }
 .mail_formItem textarea {
   width: 50%;
@@ -524,7 +530,7 @@ html {
   font-size: 1.2rem;
 }
 .mail_form p {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   margin: 3% 0;
 }
 
