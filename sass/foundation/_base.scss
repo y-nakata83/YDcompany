@@ -2,6 +2,7 @@
 
 *{
   box-sizing: border-box;
+  color: $m-black;
 }
 
 body{
@@ -9,7 +10,7 @@ body{
 }
 
 a{
-  color: black;
+  color: $m-black;
 }
 
 html{

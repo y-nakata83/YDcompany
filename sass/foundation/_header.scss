@@ -8,7 +8,7 @@
     width: 40%;
     height: 20vh;
     padding: 0 3%;
-    box-shadow: inset -10px 0 white,inset -15px 0 goldenrod,inset -20px 0 white,inset -25px 0 navy;
+    box-shadow: inset -10px 0 $m-white,inset -15px 0 $sub,inset -20px 0 $m-white,inset -25px 0 $main;
     a{
       height: 100%;
       @include flex(start);
@@ -24,9 +24,11 @@
   &_name{
     width: 90%;
     h2{
+      color: $main;
       font-size: 1.5rem;
     }
     p{
+      color: $main;
       font-size: 1.2rem;
       font-weight: bold;
       margin-top: 5%;
@@ -36,13 +38,15 @@
     width: 60%;
     height: 20vh;
     @include flex;
-    background-color: navy;
-    color: white;
+    background-color: $main;
   }
   &_info{
     &Item{
       @include flex(start);
       line-height: 1.5;
+      p{
+        color: $m-white;
+      }
     }
   }
   &_tel{
@@ -50,14 +54,20 @@
     margin-left: 3%;
     text-align: center;
     line-height: 2;
+    p{
+      color: $m-white;
+    }
     &Number{
       @include flex;
       margin-left: 2%;
+      p{
+        color: $m-white;
+      }
     }
   }
   &_under{
     height: 10vh;
-    border-top: 4px solid navy;
+    border-top: 4px solid $main;
   }
   &_nav{
     height: 100%;

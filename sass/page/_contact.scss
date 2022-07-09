@@ -3,11 +3,11 @@
 .info{
   margin-top: 5%;
   &_inner{
-    background: navy;
+    background: $main;
     text-align: center;
     padding: 3% 0;
     p{
-      color: white;
+      color: $m-white;
       font-size: 1.5rem;
       line-height: 2;
     }
@@ -23,11 +23,11 @@
   &_txt{
     width: 90%;
     margin: 0 auto;
-    background: #999;
+    background: $bg-glay;
     text-align: center;
     padding: 3% 0;
     &Name{
-      color: navy;
+      color: $main;
       font-size: 1.2rem;
     }
     &Tel{
@@ -50,7 +50,7 @@
   &_form{
     width: 90%;
     margin: 0 auto;
-    background: #999;
+    background: $bg-glay;
     padding: 3%;
     &Item{
       @include flex(start);
@@ -91,8 +91,8 @@
         content: "必須";
         @include position(50%,45%);
         display: inline-block;
-        background: white;
-        color: red;
+        background: $m-white;
+        color: $mandatory;
         font-size: 1.2rem;
         padding: 1%;
       }
@@ -104,10 +104,11 @@
         width: 50%;
         font-size: 1.2rem;
         padding: 1%;
-        background: aqua;
+        background: $light;
+        border: none;
         &:focus {
-          background: white;
-          border: 2px solid aqua;
+          background: $m-white;
+          border: 2px solid $light;
           outline: 0;
         }
       }
@@ -115,22 +116,23 @@
         width: 50%;
         padding: 1%;
         font-size: 1.2rem;
-        background: aqua;
+        background: $light;
         position: relative;
         border: none;
         &:focus{
-          background: white;
-          border: 2px solid aqua;
+          background: $m-white;
+          border: 2px solid rgb(112, 181, 228);
           outline: 0;
         }
       }
       textarea{
         width: 50%;
-        background: aqua;
+        background: $light;
         font-size: 1.2rem;
+        border: none;
         &:focus {
-          background: white;
-          border: 2px solid aqua;
+          background: $m-white;
+          border: 2px solid $light;
           outline: 0;
         }
       }
@@ -146,20 +148,20 @@
       font-size: 1.5rem;
       text-align: center;
       cursor: pointer;
-      padding: 2%;
-      background: navy;
-      color: white;
+      padding: 1%;
+      background: $main;
+      color: $m-white;
       line-height: 1em;
       transition: .3s;
       box-shadow: 6px 6px 3px #666;
-      border: 2px solid navy;
+      border: 2px solid $main;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
       &:hover{
         box-shadow: unset;
-        color: navy;
-        background: white;
+        color: $main;
+        background: $m-white;
         border: unset;
       }
     }
