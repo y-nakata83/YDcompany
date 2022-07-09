@@ -16,14 +16,14 @@
     width: 100%;
     text-align: center;
     @include position;
-    color: goldenrod;
   }
-
+  
   &_copy {
     font-size: 3.5rem;
     text-shadow: white 2px 2px;
-
+    
     span {
+      color: goldenrod;
       font-size: 2em;
     }
   }
@@ -250,7 +250,7 @@
 
   &_left,
   &_right {
-    background: #ccc;
+    background: $bg-glay;
     width: 40%;
     height: 250px;
     padding: 2%;
@@ -259,8 +259,8 @@
 
     &Ttl {
       font-size: 1.3rem;
-      color: navy;
-      border-bottom: 1px solid goldenrod;
+      color: rgb(40, 44, 70);
+      border-bottom: 1px solid rgb(212, 162, 34);
       width: 60%;
       margin: 0 auto;
 

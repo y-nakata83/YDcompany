@@ -230,6 +230,7 @@ select {
 
 * {
   box-sizing: border-box;
+  color: #333;
 }
 
 body {
@@ -237,7 +238,7 @@ body {
 }
 
 a {
-  color: black;
+  color: #333;
 }
 
 html {
@@ -268,7 +269,7 @@ html {
   width: 40%;
   height: 20vh;
   padding: 0 3%;
-  box-shadow: inset -10px 0 white, inset -15px 0 goldenrod, inset -20px 0 white, inset -25px 0 navy;
+  box-shadow: inset -10px 0 #fff, inset -15px 0 #d4a222, inset -20px 0 #fff, inset -25px 0 #2e3b8b;
 }
 .header_left a {
   height: 100%;
@@ -287,9 +288,11 @@ html {
   width: 90%;
 }
 .header_name h2 {
+  color: #2e3b8b;
   font-size: 1.5rem;
 }
 .header_name p {
+  color: #2e3b8b;
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 5%;
@@ -300,8 +303,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: navy;
-  color: white;
+  background-color: #2e3b8b;
 }
 .header_infoItem {
   display: flex;
@@ -309,11 +311,17 @@ html {
   align-items: center;
   line-height: 1.5;
 }
+.header_infoItem p {
+  color: #fff;
+}
 .header_tel {
   width: 40%;
   margin-left: 3%;
   text-align: center;
   line-height: 2;
+}
+.header_tel p {
+  color: #fff;
 }
 .header_telNumber {
   display: flex;
@@ -321,9 +329,12 @@ html {
   align-items: center;
   margin-left: 2%;
 }
+.header_telNumber p {
+  color: #fff;
+}
 .header_under {
   height: 10vh;
-  border-top: 4px solid navy;
+  border-top: 4px solid #2e3b8b;
 }
 .header_nav {
   height: 100%;
@@ -399,12 +410,12 @@ html {
   margin-top: 5%;
 }
 .info_inner {
-  background: navy;
+  background: #2e3b8b;
   text-align: center;
   padding: 3% 0;
 }
 .info_inner p {
-  color: white;
+  color: #fff;
   font-size: 1.5rem;
   line-height: 2;
 }
@@ -424,12 +435,12 @@ html {
 .tell_txt {
   width: 90%;
   margin: 0 auto;
-  background: #999;
+  background: #e9e9e9;
   text-align: center;
   padding: 3% 0;
 }
 .tell_txtName {
-  color: navy;
+  color: #2e3b8b;
   font-size: 1.2rem;
 }
 .tell_txtTel {
@@ -458,7 +469,7 @@ html {
 .mail_form {
   width: 90%;
   margin: 0 auto;
-  background: #999;
+  background: #e9e9e9;
   padding: 3%;
 }
 .mail_formItem {
@@ -496,8 +507,8 @@ html {
   left: 45%;
   transform: translate(-50%, -50%);
   display: inline-block;
-  background: white;
-  color: red;
+  background: #fff;
+  color: #eb2222;
   font-size: 1.2rem;
   padding: 1%;
 }
@@ -509,34 +520,36 @@ html {
   width: 50%;
   font-size: 1.2rem;
   padding: 1%;
-  background: aqua;
+  background: #a8d6f5;
+  border: none;
 }
 .mail_formItem select:focus {
-  background: white;
-  border: 2px solid aqua;
+  background: #fff;
+  border: 2px solid #a8d6f5;
   outline: 0;
 }
 .mail_formItem input {
   width: 50%;
   padding: 1%;
   font-size: 1.2rem;
-  background: aqua;
+  background: #a8d6f5;
   position: relative;
   border: none;
 }
 .mail_formItem input:focus {
-  background: white;
-  border: 2px solid aqua;
+  background: #fff;
+  border: 2px solid #70b5e4;
   outline: 0;
 }
 .mail_formItem textarea {
   width: 50%;
-  background: aqua;
+  background: #a8d6f5;
   font-size: 1.2rem;
+  border: none;
 }
 .mail_formItem textarea:focus {
-  background: white;
-  border: 2px solid aqua;
+  background: #fff;
+  border: 2px solid #a8d6f5;
   outline: 0;
 }
 .mail_form p {
@@ -550,21 +563,21 @@ html {
   font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
-  padding: 2%;
-  background: navy;
-  color: white;
+  padding: 1%;
+  background: #2e3b8b;
+  color: #fff;
   line-height: 1em;
   transition: 0.3s;
   box-shadow: 6px 6px 3px #666;
-  border: 2px solid navy;
+  border: 2px solid #2e3b8b;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
 .mail_formBtn:hover {
   box-shadow: unset;
-  color: navy;
-  background: white;
+  color: #2e3b8b;
+  background: #fff;
   border: unset;
 }
 
@@ -615,13 +628,13 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: goldenrod;
 }
 .top_copy {
   font-size: 3.5rem;
   text-shadow: white 2px 2px;
 }
 .top_copy span {
+  color: goldenrod;
   font-size: 2em;
 }
 .top_ex {
@@ -866,7 +879,7 @@ html {
   align-items: center;
 }
 .contact_left, .contact_right {
-  background: #ccc;
+  background: #e9e9e9;
   width: 40%;
   height: 250px;
   padding: 2%;
@@ -875,8 +888,8 @@ html {
 }
 .contact_leftTtl, .contact_rightTtl {
   font-size: 1.3rem;
-  color: navy;
-  border-bottom: 1px solid goldenrod;
+  color: #282c46;
+  border-bottom: 1px solid #d4a222;
   width: 60%;
   margin: 0 auto;
 }
