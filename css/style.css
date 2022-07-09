@@ -406,6 +406,25 @@ html {
   margin-left: 10%;
 }
 
+.copy_inner {
+  background: navy;
+}
+.copy_center {
+  position: relative;
+  width: 100%;
+}
+.copy_centerInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 1px white;
+  width: 80%;
+}
+.copy_centerInner p {
+  color: white;
+}
+
 .info {
   margin-top: 5%;
 }
@@ -804,7 +823,7 @@ html {
 }
 .about_bg {
   position: relative;
-  background-color: #4fb9e2;
+  background-color: rgb(79, 185, 226);
   opacity: 0.8;
   height: 230px;
 }
@@ -921,5 +940,3 @@ html {
 .contact_time {
   font-size: 1.2rem;
 }
-
-/*# sourceMappingURL=style.css.map */
