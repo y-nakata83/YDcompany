@@ -1,2 +1,19 @@
 @use "../global"as *;
 
+.copy {
+  &_inner {
+    background: navy;
+  }
+  &_center {
+    position: relative;
+    width: 100%;
+    &Inner {
+      @include position;
+      border: solid 1px white;
+      width: 80%;
+      p {
+        color: white;
+      }
+    }
+  }
+}
