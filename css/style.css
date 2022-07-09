@@ -511,6 +511,11 @@ html {
   padding: 1%;
   background: aqua;
 }
+.mail_formItem select:focus {
+  background: white;
+  border: 2px solid aqua;
+  outline: 0;
+}
 .mail_formItem input {
   width: 50%;
   padding: 1%;
@@ -529,9 +534,38 @@ html {
   background: aqua;
   font-size: 1.2rem;
 }
+.mail_formItem textarea:focus {
+  background: white;
+  border: 2px solid aqua;
+  outline: 0;
+}
 .mail_form p {
   font-size: 1.3rem;
   margin: 3% 0;
+}
+.mail_formBtn {
+  margin-top: 5%;
+  display: inline-block;
+  border-radius: 20%;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 2%;
+  background: navy;
+  color: white;
+  line-height: 1em;
+  transition: 0.3s;
+  box-shadow: 6px 6px 3px #666;
+  border: 2px solid navy;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mail_formBtn:hover {
+  box-shadow: unset;
+  color: navy;
+  background: white;
+  border: unset;
 }
 
 .ideal_ttl {
