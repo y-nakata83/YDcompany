@@ -9,6 +9,12 @@
     height: 20vh;
     padding: 0 3%;
     box-shadow: inset -10px 0 $m-white,inset -15px 0 $sub,inset -20px 0 $m-white,inset -25px 0 $main;
+    @include mq(pc){
+      width: 35%;
+    }
+    @include mq(tab){
+      width: 50%;
+    }
     a{
       height: 100%;
       @include flex(start);
@@ -39,8 +45,19 @@
     height: 20vh;
     @include flex;
     background-color: $main;
+    @include mq(pc){
+      width: 65%;
+    }
+    @include mq(tab){
+      flex-direction: column;
+      width: 50%;
+    }
   }
   &_info{
+    @include mq(tab){
+      width: 80%;
+      margin: 0 auto;
+    }
     &Item{
       @include flex(start);
       line-height: 1.5;
@@ -54,6 +71,10 @@
     margin-left: 3%;
     text-align: center;
     line-height: 2;
+    @include mq(tab){
+      width: 80%;
+      margin: 0 auto;
+    }
     p{
       color: $m-white;
     }
