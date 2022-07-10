@@ -442,6 +442,25 @@ html {
   margin-left: 10%;
 }
 
+.copy_inner {
+  background: navy;
+}
+.copy_center {
+  position: relative;
+  width: 100%;
+}
+.copy_centerInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 1px white;
+  width: 80%;
+}
+.copy_centerInner p {
+  color: white;
+}
+
 .info {
   margin-top: 5%;
 }
