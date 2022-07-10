@@ -447,15 +447,31 @@ html {
   display: flex;
   width: 100%;
   height: 100vh;
-  background: navy;
+  background: rgb(46, 59, 139);
+}
+.copy_left {
+  position: absolute;
+  top: 60%;
+  left: 11.3%;
+  transform: translate(-50%, -50%);
+  border-bottom: solid 1px white;
+  width: 22.5%;
+}
+.copy_right {
+  position: absolute;
+  top: 60%;
+  left: 88.7%;
+  transform: translate(-50%, -50%);
+  border-bottom: solid 1px white;
+  width: 22.5%;
 }
 .copy_center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
-  height: 55%;
+  width: 55%;
+  height: 45%;
   border: solid 1px white;
   text-align: center;
 }
@@ -469,12 +485,12 @@ html {
   line-height: 2;
 }
 .copy_contain {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: white;
 }
 .copy_contain span {
-  color: red;
-  font-size: 2rem;
+  color: rgb(212, 162, 34);
+  font-size: 1.7rem;
 }
 
 .info {
