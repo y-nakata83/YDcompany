@@ -22,9 +22,21 @@
     font-size: 3.5rem;
     text-shadow: $m-white 2px 2px;
     color: $sub;
+    @include mq(tab){
+      margin-bottom: 3%;
+    }
+    br{
+      display: none;
+      @include mq(tab){
+        display: block;
+      }
+    }
     span {
       color: $sub;
       font-size: 2em;
+      @include mq(tab){
+        line-height: 1.5;
+      }
     }
   }
 
