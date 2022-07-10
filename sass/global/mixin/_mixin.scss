@@ -1,3 +1,4 @@
+@use "../setting/color" as c;
 
 @mixin flex($nocenter:center,$noalign:center) {
   display: flex;
@@ -29,6 +30,6 @@
     color: #999;
     margin-bottom: 2%;
     span{
-      color: navy;
+      color: c.$main;
     }
 }
