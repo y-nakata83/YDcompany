@@ -689,9 +689,27 @@ html {
   text-shadow: #fff 2px 2px;
   color: #d4a222;
 }
+@media screen and (max-width: 768px) {
+  .top_copy {
+    margin-bottom: 3%;
+  }
+}
+.top_copy br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .top_copy br {
+    display: block;
+  }
+}
 .top_copy span {
   color: #d4a222;
   font-size: 2em;
+}
+@media screen and (max-width: 768px) {
+  .top_copy span {
+    line-height: 1.5;
+  }
 }
 .top_ex {
   color: #fff;
