@@ -1,5 +1,6 @@
 @use "../setting"as *;
 @use "mixin"as m;
+@use "breakpoint"as b;
 
 .top_button{
   @include m.position-r(5%,5%);
@@ -8,6 +9,10 @@
   background-color: white;
   border-radius: 50%;
   @include m.flex;
+  @include b.mq(tab){
+    width: 115px;
+    height: 115px;
+  }
   a{
     @include m.flex;
     flex-direction: column;
@@ -25,6 +30,10 @@
   border: solid 1px black;
   width: 150px;
   text-align: center;
+  @include b.mq(tab){
+    position: unset;
+    margin: 5% auto;
+  }
   a{
     display: block;
     width: 100%;

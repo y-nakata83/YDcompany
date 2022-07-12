@@ -51,21 +51,31 @@
 
   &_inner {
     padding: 0 5%;
+    @include mq(tab){
+      text-align: center;
+      padding: 0;
+    }
   }
 
   &_top {
     @include flex;
-
+    @include mq(tab){
+      flex-direction: column;
+    }
     &Left {
       width: 50%;
+      @include mq(tab){
+        width: 90%;
+      }
     }
-
     &Right {
       position: relative;
       width: 50%;
       text-align: center;
       opacity: .8;
-
+      @include mq(tab){
+        width: 90%;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -74,17 +84,31 @@
         height: 100%;
         background: url(../img/service-img2.png);
         @include bg;
-        @include position-r(-80%, 0)
+        @include position-r(-80%, 0);
+        @include mq(pc){
+          width: 50%;
+        }
+        @include mq(tab){
+          display: none;
+        }
       }
-
       img {
         width: 50%;
+        @include mq(pc){
+          width: 70%;
+        }
+        @include mq(tab){
+          width: 100%;
+          object-fit: cover;
+        }
       }
     }
   }
-
   &_ttl {
     @include ttl;
+    @include mq(tab){
+      margin-bottom: 5%;
+    }
   }
 
   &_ex {
@@ -97,6 +121,10 @@
 
   &_bottom {
     position: relative;
+    overflow: hidden;
+    @include mq(tab){
+      margin-top: 5%;
+    }
   }
 
   &_item {
@@ -110,21 +138,22 @@
     position: relative;
     margin-bottom: 1%;
     left: 3%;
-
+    @include mq(tab){
+      text-align: initial;
+      width: 90%;
+      padding-left: 15%;
+    }
     &::before {
       @include position(50%, 8%);
       counter-increment: number 1;
       content: "0" counter(number);
     }
-
     &:nth-child(2) {
       left: 6%;
     }
-
     &:nth-child(3) {
       left: 9%;
     }
-
     &:nth-child(4) {
       left: 12%;
     }
@@ -133,22 +162,21 @@
 
 .frow {
   margin-top: 5%;
-
   &_inner {
     background: url(../img/flow-bg.png);
     @include bg;
     padding: 3% 5%;
   }
-
   &_ttl {
     @include ttl;
     color: $main;
   }
-
   &_list {
     @include flex(center, start);
+    @include mq(tab){
+      display: block;
+    }
   }
-
   &_item {
     position: relative;
     width: 12%;
@@ -156,19 +184,53 @@
     background: $main;
     clip-path: polygon(70% 0, 100% 50%, 70% 100%, 0 100%, 0 0);
     color: $m-white;
-
-    img {
+    &:last-child{
+      clip-path: none;
+      @include mq(tab){
+        height: 150px;
+      }
+    }
+    @include mq(pc){
+      width: 15%;
+    }
+    @include mq(tab){
+      width: 100%;
+      text-align: center;
+      height: 200px;
+      clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+    }
+    &Img {
       @include position(10%, 40%);
+      &Last{
+        @include position(10%,50%);
+        @include mq(tab) {
+            @include position(20%);
+            margin-bottom: 3%;
+          }
+      }
+      @include mq(tab){
+        @include position(20%);
+        margin-bottom: 3%;
+      }
     }
   }
 
   &_single {
     @include position(50%, 40%);
-
+    &:last-child{
+      @include position;
+    }
+    @include mq(tab) {
+        @include position;
+      }
     p {
       writing-mode: vertical-lr;
       color: $m-white;
       font-size: 1.3rem;
+      @include mq(tab) {
+        writing-mode: unset;
+        font-size: 1.5rem
+      }
     }
   }
 
@@ -176,52 +238,57 @@
     @include position(50%, 40%);
     @include flex(center, start);
     line-height: 1.5;
-
+    @include mq(tab){
+      display: block;
+      @include position;
+    }
     p {
       writing-mode: vertical-rl;
       color: $m-white;
       font-size: 1.3rem;
+      @include mq(tab){
+        writing-mode: unset;
+        font-size: 1.5rem
+      }
     }
   }
 }
 
 .about {
   margin-top: 5%;
-
   &_ttl {
     @include ttl;
     margin-left: 5%;
   }
-
   &_bg {
     position: relative;
     background-color: $light;
     opacity: .8;
     height: 230px;
-
-    &::before {
-      content: "01  02  03";
-      display: block;
-      width: 100%;
-      @include position;
-      color: $m-white;
-      opacity: .2;
-      font-size: 20vw;
-      text-align: center;
-      z-index: -1;
-    }
   }
-
   &_list {
     @include flex(space-around);
     height: 100%;
+    overflow: hidden;
   }
-
   &_item {
     text-align: center;
     height: 100%;
     width: 25%;
     position: relative;
+    &::before{
+      @include backnamber("01");
+    }
+    &:nth-child(2){
+      &::before{
+        @include backnamber("02")
+      }
+    }
+    &:nth-child(3){
+      &::before{
+        @include backnamber("03")
+      }
+    }
   }
 
   &_txt {
@@ -260,6 +327,9 @@
 
   &_box {
     @include flex(space-around);
+    @include mq(tab){
+      flex-direction: column;
+    }
   }
 
   &_left,
@@ -270,7 +340,12 @@
     padding: 2%;
     flex-direction: column;
     text-align: center;
-
+    @include mq(tab){
+      width: 90%;
+      margin-bottom: 5%;
+      height: 200px;
+      padding: 5%;
+    }
     &Ttl {
       font-size: 1.3rem;
       color: $main;
