@@ -13,6 +13,12 @@
     width: 115px;
     height: 115px;
   }
+  @include b.mq(sp){
+    width: 95px;
+    height: 95px;
+    right: 2%;
+    bottom: 2%;
+  }
   a{
     @include m.flex;
     flex-direction: column;
