@@ -1,9 +1,3 @@
-$(function () {
-  $('.js-btn').on('click', function () {        // js-btnクラスをクリックすると、
-    $('.header_nav , .btn_img').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
-  })
-});
-
 function PageTopCheck(){
     var winScrollTop = $(this).scrollTop();
     var secondTop =  $("#service").offset().top - 150; //#area-2の上から150pxの位置まで来たら
