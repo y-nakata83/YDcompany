@@ -22,6 +22,9 @@
     font-size: 3.5rem;
     text-shadow: $m-white 2px 2px;
     color: $sub;
+    @include mq(pc){
+      font-size: 3rem;
+    }
     @include mq(tab){
       margin-bottom: 3%;
     }
@@ -117,6 +120,9 @@
     margin-bottom: 3%;
     text-align: justify;
     line-height: 1.2;
+    @include mq(tab){
+      padding-left: 0;
+    }
   }
 
   &_bottom {
@@ -170,6 +176,9 @@
   &_ttl {
     @include ttl;
     color: $main;
+    @include mq(sp){
+      font-size: 1.5rem;
+    }
   }
   &_list {
     @include flex(center, start);
@@ -194,23 +203,34 @@
       width: 15%;
     }
     @include mq(tab){
-      width: 100%;
+      width: 80%;
+      margin: 0 auto;
       text-align: center;
       height: 200px;
       clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
     }
+    @include mq(sp){
+      height: 150px;
+      &:last-child{
+        height: 100px;
+      }
+    }
     &Img {
       @include position(10%, 40%);
+      width: 30%;
       &Last{
+        width: 30%;
         @include position(10%,50%);
         @include mq(tab) {
             @include position(20%);
             margin-bottom: 3%;
+            width: 15%;
           }
       }
       @include mq(tab){
         @include position(20%);
         margin-bottom: 3%;
+        width: 15%;
       }
     }
   }
@@ -222,6 +242,7 @@
     }
     @include mq(tab) {
         @include position;
+        width: 100%;
       }
     p {
       writing-mode: vertical-lr;
@@ -241,6 +262,7 @@
     @include mq(tab){
       display: block;
       @include position;
+      width: 100%;
     }
     p {
       writing-mode: vertical-rl;
@@ -265,37 +287,61 @@
     background-color: $light;
     opacity: .8;
     height: 230px;
+    @include mq(tab){
+      height: auto;
+    }
   }
   &_list {
     @include flex(space-around);
     height: 100%;
     overflow: hidden;
+    @include mq(tab){
+      flex-direction: column;
+      padding: 5% 0;
+    }
   }
   &_item {
     text-align: center;
     height: 100%;
     width: 25%;
+    @include flex;
     position: relative;
+    @include mq(pc){
+      width: 31%;
+    }
+    @include mq(tab){
+      width: 90%;
+      padding: 10% 0;
+      margin-bottom: 5%;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
     &::before{
       @include backnamber("01");
+      @include mq(tab){
+        left: 15%;
+      }
     }
     &:nth-child(2){
       &::before{
-        @include backnamber("02")
+        @include backnamber("02");
       }
     }
     &:nth-child(3){
       &::before{
-        @include backnamber("03")
+        @include backnamber("03");
+        @include mq(tab){
+          left:85%;
+        }
       }
     }
   }
 
   &_txt {
     width: 100%;
-    @include position;
-    display: block;
-
+    @include flex;
+    flex-direction: column;
     &Ttl {
       font-size: 2rem;
       color: $main;
@@ -310,8 +356,9 @@
     line-height: 1.5;
     font-weight: bold;
     color: $m-white;
-
+    
     span {
+      color: $m-white;
       font-size: .6em;
     }
   }
@@ -352,7 +399,9 @@
       border-bottom: 1px solid $sub;
       width: 65%;
       margin: 0 auto;
-      
+      @include mq(pc){
+        width: 80%;
+      }
       span {
         color: $main;
         font-size: 1.8rem;
@@ -365,26 +414,32 @@
     @include flex;
     flex-direction: column;
     height: 100%;
-
     a {
       font-size: 1.6rem;
       font-weight: bold;
       text-decoration: underline;
+      @include mq(pc){
+        font-size: 1.3rem;
+      }
       &:hover{
         opacity: .6;
       }
     }
   }
-
   &_name {
     color: $main;
     font-size: 1.2rem;
   }
-
   &_tel {
     @include flex;
     font-size: 2.5rem;
     line-height: 2;
+    @include mq(pc){
+      font-size: 2rem;
+    }
+    img{
+      width: 10%;
+    }
   }
 
   &_time {

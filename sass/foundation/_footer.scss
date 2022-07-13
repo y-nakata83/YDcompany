@@ -15,19 +15,34 @@
   }
   &_left{
     width: 35%;
+    @include mq(tab){
+      width: 50%;
+    }
   }
   &_right{
-    width: 55%
+    width: 55%;
+    @include mq(tab){
+      width: 50%;
+    }
   }
   &_nav{
     &Inner{
       @include flex(end);
+      @include mq(tab){
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10%;
+      }
     }
     &Ja{
       color: $m-white;
     }
     &Item{
       margin-left: 5%;
+      @include mq(tab){
+        margin-left: 0;
+        margin-bottom: 10%;
+      }
       a{
         color: $m-white;
       }
