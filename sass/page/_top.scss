@@ -39,6 +39,10 @@
       font-size: 2em;
       @include mq(tab){
         line-height: 1.5;
+        font-size: 1.5em;
+      }
+      @include mq(sp){
+        font-size: 1.3em;
       }
     }
   }

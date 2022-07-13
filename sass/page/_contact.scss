@@ -10,6 +10,9 @@
       color: $m-white;
       font-size: 1.5rem;
       line-height: 2;
+      @include mq(sp){
+        font-size: 1.3rem;
+      }
     }
   }
 }
@@ -34,6 +37,18 @@
       @include flex;
       font-size: 2.5rem;
       line-height: 3;
+      @include mq(sp){
+        font-size: 2rem;
+      }
+      img{
+        width: 5%;
+        @include mq(pc){
+          width: 7%;
+        }
+        @include mq(tab){
+          width: 10%;
+        }
+      }
     }
     &Time{
       font-size: 1.2rem;
@@ -51,31 +66,22 @@
     width: 90%;
     margin: 0 auto;
     background: $bg-glay;
-    padding: 3%;
+    padding: 3% 0;
+    @include mq(tab){
+      padding: 5% 0;
+    }
     &Item{
       @include flex(start);
       margin-bottom: 1%;
       position: relative;
-      &:nth-of-type(1){
-        &::before{
-          display: none;
-        }
+      @include mq(tab){
+        flex-direction: column;
+        margin-bottom: 3%;
       }
-      &:nth-of-type(8){
-        &::before{
-          display: none;
-        }
-      }
-      &:nth-of-type(9){
-        &::before{
-          display: none;
-        }
-      }
-      &:nth-of-type(10){
-        &::before{
-          display: none;
-        }
-      }
+      &:nth-of-type(1),
+      &:nth-of-type(8),
+      &:nth-of-type(9),
+      &:nth-of-type(10),
       &:nth-of-type(11){
         &::before{
           display: none;
@@ -83,6 +89,9 @@
       }
       &:nth-of-type(12){
         align-items: flex-start;
+        @include mq(tab){
+          align-items: center;
+        }
         &::before{
           display: none;
         }
@@ -95,10 +104,21 @@
         color: $mandatory;
         font-size: 1.2rem;
         padding: 1%;
+        @include mq(tab){
+          top: 15%;
+          left: 60%;
+        }
+        @include mq(sp){
+          left: 70%;
+        }
       }
       label{
         width: 50%;
         font-size: 1.3rem;
+        @include mq(tab){
+          width: 80%;
+          margin-bottom: 3%;
+        }
       }
       select{
         width: 50%;
@@ -106,6 +126,9 @@
         padding: 1%;
         background: $light;
         border: none;
+        @include mq(tab){
+          width: 80%;
+        }
         &:focus {
           background: $m-white;
           border: 2px solid $light;
@@ -119,6 +142,9 @@
         background: $light;
         position: relative;
         border: none;
+        @include mq(tab) {
+            width: 80%;
+          }
         &:focus{
           background: $m-white;
           border: 2px solid rgb(112, 181, 228);
@@ -130,6 +156,9 @@
         background: $light;
         font-size: 1.2rem;
         border: none;
+        @include mq(tab) {
+            width: 80%;
+          }
         &:focus {
           background: $m-white;
           border: 2px solid $light;
@@ -140,6 +169,12 @@
     p{
       font-size: 1.3rem;
       margin: 3% 0;
+      @include mq(tab){
+        margin: 5% 0 5% 10% ;
+      }
+      @include mq(sp){
+        margin-left: 3%;
+      }
     }
     &Btn{
       margin-top: 5%;
@@ -158,6 +193,9 @@
       position: relative;
       left: 50%;
       transform: translateX(-50%);
+      @include mq(tab){
+        padding: 3% 6%;
+      }
       &:hover{
         box-shadow: unset;
         color: $main;
@@ -165,5 +203,13 @@
         border: unset;
       }
     }
+  }
+}
+
+.tab-block {
+  display: none;
+
+  @include mq(tab) {
+    display: block;
   }
 }

@@ -12,17 +12,26 @@
     border-top: 2px solid $sub;
     border-bottom: 2px solid $sub;
     padding: 3% 10%;
+    @include mq(sp){
+      padding: 3% 5%;
+    }
   }
   &_left{
     width: 35%;
     @include mq(tab){
       width: 50%;
     }
+    @include mq(sp){
+      width: 60%;
+    }
   }
   &_right{
     width: 55%;
     @include mq(tab){
       width: 50%;
+    }
+    @include mq(sp){
+      width: 40%;
     }
   }
   &_nav{
