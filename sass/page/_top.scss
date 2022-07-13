@@ -241,12 +241,21 @@
 
   &_single {
     @include position(50%, 40%);
-    &:last-child{
-      @include position;
-    }
     @include mq(tab) {
         @include position;
         width: 100%;
+      }
+      &Last{
+        @include position;
+        p{
+          writing-mode: vertical-lr;
+          color: $m-white;
+          font-size: 1.3rem;
+          @include mq(tab) {
+            writing-mode: unset;
+            font-size: 1.5rem
+          }
+        }
       }
     p {
       writing-mode: vertical-lr;

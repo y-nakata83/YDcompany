@@ -1259,12 +1259,6 @@ html {
   left: 40%;
   transform: translate(-50%, -50%);
 }
-.frow_single:last-child {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 @media screen and (max-width: 768px) {
   .frow_single {
     position: absolute;
@@ -1272,6 +1266,23 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+  }
+}
+.frow_singleLast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frow_singleLast p {
+  writing-mode: vertical-lr;
+  color: #fff;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 768px) {
+  .frow_singleLast p {
+    writing-mode: unset;
+    font-size: 1.5rem;
   }
 }
 .frow_single p {
