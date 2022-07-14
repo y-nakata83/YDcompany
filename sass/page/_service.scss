@@ -7,6 +7,7 @@
     width: 100%;
     height: 100vh;
     background: $main;
+    overflow: hidden;
   }
   &_left {
     position: absolute;
@@ -14,7 +15,7 @@
     left: 11.3%;
     transform: translate(-95%, -50%);
     height: 45%;
-    overflow: hidden;
+    z-index: 2;
     img {
       width: 100%;
       height: 100%;
@@ -26,7 +27,8 @@
     left: 50%;
     transform: translate(74%, -50%);
     height: 45%;
-    overflow: hidden;
+    padding-right: 15%;
+    z-index: 2;
     img {
       width: 100%;
       height: 100%;
@@ -44,8 +46,9 @@
       left: 0%;
       transform: translate(-100%, -50%);
       content: "";
-      width: 92px;
+      width: 140px;
       border-bottom: solid 1px white;
+      z-index: 1;
     }
     &::after {
       position: absolute;
@@ -53,8 +56,9 @@
       left: 100%;
       transform: translate(0%, -50%);
       content: "";
-      width: 92px;
+      width: 140px;
       border-bottom: solid 1px white;
+      z-index: 1;
     }
   }
   &_txt {
@@ -69,6 +73,66 @@
     span {
       color: $sub;
       font-size: 1.7rem;
+    }
+  }
+}
+.job {
+  &Inner {
+    width: 100%;
+    position: relative;
+  }
+  &_overview {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  &_english {
+    line-height: 1.5;
+    ul {
+      li {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+  &_ttl {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 1% 3%;
+    margin: 1% auto;
+    background: $main;
+    h3 {
+      color: white;
+      font-size: 3rem;
+      
+    }
+  }
+  &_content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    img {
+      position: absolute;
+      width: 35%;
+      z-index: 2;
+    }
+    &Txt {
+      position: absolute;
+      display: inline-block;
+      right: 0;
+      bottom: 0%;
+      padding: 3% 6%;
+      line-height: 2;
+      background: $main;
+      z-index: 1;
+      p {
+        color: white;
+        font-size: 1.3rem;
+        span {
+          color: $sub;
+          font-size: 1.6rem;
+        }
+      }
     }
   }
 }
