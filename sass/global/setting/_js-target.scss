@@ -1,0 +1,51 @@
+@use "../mixin/mixin"as *;
+@use "./color"as c;
+
+// ヘッダーを途中から固定
+.header_under.m_fixed {
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: c.$m-white;
+  width: 100%;
+  border: none;
+  height: auto;
+  padding: 1% 0;
+  box-shadow: 0 5px 15px c.$m-black;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  width: 100%;
+  height: 100%;
+  background-color: c.$load;
+  /* 背景カラー */
+  z-index: 9999;
+  /* 一番手前に */
+  pointer-events: none;
+  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;
+  /* 初期値 : 透過状態 */
+  -webkit-transition: all .8s ease;
+  /* アニメーション時間は 0.8秒 */
+  transition: all .8s ease;
+}
+
+body.fadeout::after {
+  opacity: 1;
+  left: -100vw;
+}
+
+.wrapper{
+  transition:all 1s ease-in-out;
+  opacity: 1;
+}
+
+body.fadeout .wrapper{
+  opacity: 0;
+  transition: .8s ease;
+}
