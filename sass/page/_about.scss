@@ -64,5 +64,20 @@
 .history {
   &_ttl {
     @include ttl;
+    text-align: center;
+  }
+  &_inner {
+    width: 100%;
+  }
+  &_left {
+    table {
+      margin: 0 auto;
+      tr {
+        border-bottom: 1px solid $m-black;
+      }
+      td {
+        width: 50%;
+      }
+    }
   }
 }

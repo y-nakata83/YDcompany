@@ -1075,6 +1075,7 @@ html {
   font-size: 2rem;
   color: #999;
   margin-bottom: 2%;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .history_ttl {
@@ -1083,6 +1084,18 @@ html {
 }
 .history_ttl span {
   color: rgb(46, 59, 139);
+}
+.history_inner {
+  width: 100%;
+}
+.history_left table {
+  margin: 0 auto;
+}
+.history_left table tr {
+  border-bottom: 1px solid #333;
+}
+.history_left table td {
+  width: 50%;
 }
 
 .top {
