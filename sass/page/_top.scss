@@ -222,8 +222,12 @@
     &Img {
       @include position(10%, 40%);
       width: 30%;
+      font-size: 2.5rem;
+      text-align: center;
       &Last{
         width: 30%;
+        text-align: center;
+        font-size: 2.5rem;
         @include position(10%,50%);
         @include mq(tab) {
             @include position(20%);
@@ -450,8 +454,10 @@
     @include mq(pc){
       font-size: 2rem;
     }
-    img{
-      width: 10%;
+    &Img{
+      text-align: center;
+      font-size: 2.5rem;
+      color: $m-black;
     }
   }
 
