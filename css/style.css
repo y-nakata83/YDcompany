@@ -791,18 +791,10 @@ html {
     font-size: 2rem;
   }
 }
-.tell_txtTel img {
-  width: 5%;
-}
-@media screen and (max-width: 1024px) {
-  .tell_txtTel img {
-    width: 7%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .tell_txtTel img {
-    width: 10%;
-  }
+.tell_txtTel span {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
 }
 .tell_txtTime {
   font-size: 1.2rem;

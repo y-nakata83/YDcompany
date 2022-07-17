@@ -40,14 +40,10 @@
       @include mq(sp){
         font-size: 2rem;
       }
-      img{
-        width: 5%;
-        @include mq(pc){
-          width: 7%;
-        }
-        @include mq(tab){
-          width: 10%;
-        }
+      span{
+        text-align: center;
+        color: $m-black;
+        font-size: 2.5rem;
       }
     }
     &Time{
