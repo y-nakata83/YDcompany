@@ -3,11 +3,62 @@
 .ideal {
   &_ttl {
     @include ttl;
+    padding: 1%;
+  }
+  &_inner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+  }
+  &_left {
+    width: 50%;
+    text-align: center;
+    h3 {
+      padding: 1%;
+      font-size: 1.3rem;
+    }
+    p {
+      padding: 1%;
+      font-size: 1.3rem;
+    }
+  }
+  &_right {
+    width: 50%;
+    line-height: 1.5;
+    p {
+      font-size: 1.3rem
+    }
   }
 }
 .president {
   &_ttl {
     @include ttl;
+  }
+  &_inner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+  }
+  &_left {
+    width: 50%;
+    text-align: center;
+    h3 {
+      padding: 1%;
+      font-size: 1.3rem;
+    }
+    p {
+      padding: 1%;
+      font-size: 1.3rem;
+    }
+  }
+  &_right {
+    width: 50%;
+    line-height: 1.5;
+    p {
+      font-size: 1.3rem
+    }
   }
 }
 .history {

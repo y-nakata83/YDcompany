@@ -288,7 +288,7 @@ body.fadeout .wrapper {
   width: 100%;
   height: 100%;
   line-height: 2.5;
-  color: #d4a222;
+  color: rgb(212, 162, 34);
   font-weight: bold;
   box-shadow: 0 3px 8px #666;
 }
@@ -348,7 +348,7 @@ html {
   width: 40%;
   height: 20vh;
   padding: 0 3%;
-  box-shadow: inset -10px 0 #fff, inset -15px 0 #d4a222, inset -20px 0 #fff, inset -25px 0 #2e3b8b;
+  box-shadow: inset -10px 0 #fff, inset -15px 0 rgb(212, 162, 34), inset -20px 0 #fff, inset -25px 0 rgb(46, 59, 139);
 }
 @media screen and (max-width: 1024px) {
   .header_left {
@@ -400,11 +400,11 @@ html {
   }
 }
 .header_name h2 {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
   font-size: 1.5rem;
 }
 .header_name p {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 5%;
@@ -415,7 +415,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2e3b8b;
+  background-color: rgb(46, 59, 139);
 }
 @media screen and (max-width: 1024px) {
   .header_right {
@@ -477,7 +477,7 @@ html {
 }
 .header_under {
   height: 10vh;
-  border-top: 4px solid #2e3b8b;
+  border-top: 4px solid rgb(46, 59, 139);
 }
 .header_nav {
   height: 100%;
@@ -512,7 +512,7 @@ html {
 
 .footer {
   margin-top: 10%;
-  background: #2e3b8b;
+  background: rgb(46, 59, 139);
   height: 30vh;
   display: flex;
   justify-content: center;
@@ -523,9 +523,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #2e3b8b;
-  border-top: 2px solid #d4a222;
-  border-bottom: 2px solid #d4a222;
+  background: rgb(46, 59, 139);
+  border-top: 2px solid rgb(212, 162, 34);
+  border-bottom: 2px solid rgb(212, 162, 34);
   padding: 3% 10%;
 }
 @media screen and (max-width: 480px) {
@@ -600,7 +600,7 @@ html {
   display: flex;
   width: 100%;
   height: 100vh;
-  background: #2e3b8b;
+  background: rgb(46, 59, 139);
   overflow: hidden;
 }
 .copy_left {
@@ -672,7 +672,7 @@ html {
   color: white;
 }
 .copy_contain span {
-  color: #d4a222;
+  color: rgb(212, 162, 34);
   font-size: 1.7rem;
 }
 
@@ -697,7 +697,7 @@ html {
   white-space: nowrap;
   padding: 1% 3%;
   margin: 1% auto;
-  background: #2e3b8b;
+  background: rgb(46, 59, 139);
 }
 .job_ttl h3 {
   color: white;
@@ -720,7 +720,7 @@ html {
   bottom: 0%;
   padding: 3% 6%;
   line-height: 2;
-  background: #2e3b8b;
+  background: rgb(46, 59, 139);
   z-index: 1;
 }
 .job_contentTxt p {
@@ -728,7 +728,7 @@ html {
   font-size: 1.3rem;
 }
 .job_contentTxt p span {
-  color: #d4a222;
+  color: rgb(212, 162, 34);
   font-size: 1.6rem;
 }
 
@@ -736,7 +736,7 @@ html {
   margin-top: 5%;
 }
 .info_inner {
-  background: #2e3b8b;
+  background: rgb(46, 59, 139);
   text-align: center;
   padding: 3% 0;
 }
@@ -766,17 +766,17 @@ html {
   }
 }
 .tell_ttl span {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
 }
 .tell_txt {
   width: 90%;
   margin: 0 auto;
-  background: #e9e9e9;
+  background: rgb(233, 233, 233);
   text-align: center;
   padding: 3% 0;
 }
 .tell_txtName {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
   font-size: 1.2rem;
 }
 .tell_txtTel {
@@ -815,12 +815,12 @@ html {
   }
 }
 .mail_ttl span {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
 }
 .mail_form {
   width: 90%;
   margin: 0 auto;
-  background: #e9e9e9;
+  background: rgb(233, 233, 233);
   padding: 3% 5%;
 }
 @media screen and (max-width: 768px) {
@@ -863,7 +863,7 @@ html {
   transform: translate(-50%, -50%);
   display: inline-block;
   background: #fff;
-  color: #eb2222;
+  color: rgb(235, 34, 34);
   font-size: 1.2rem;
   padding: 1%;
 }
@@ -892,7 +892,7 @@ html {
   width: 50%;
   font-size: 1.2rem;
   padding: 1%;
-  background: #79c3f5;
+  background: rgb(121, 195, 245);
   border: none;
 }
 @media screen and (max-width: 768px) {
@@ -902,14 +902,14 @@ html {
 }
 .mail_formItem select:focus {
   background: #fff;
-  border: 2px solid #79c3f5;
+  border: 2px solid rgb(121, 195, 245);
   outline: 0;
 }
 .mail_formItem input {
   width: 50%;
   padding: 1%;
   font-size: 1.2rem;
-  background: #79c3f5;
+  background: rgb(121, 195, 245);
   position: relative;
   border: none;
 }
@@ -920,12 +920,12 @@ html {
 }
 .mail_formItem input:focus {
   background: #fff;
-  border: 2px solid #70b5e4;
+  border: 2px solid rgb(112, 181, 228);
   outline: 0;
 }
 .mail_formItem textarea {
   width: 50%;
-  background: #79c3f5;
+  background: rgb(121, 195, 245);
   font-size: 1.2rem;
   border: none;
 }
@@ -936,7 +936,7 @@ html {
 }
 .mail_formItem textarea:focus {
   background: #fff;
-  border: 2px solid #79c3f5;
+  border: 2px solid rgb(121, 195, 245);
   outline: 0;
 }
 .mail_form p {
@@ -961,12 +961,12 @@ html {
   text-align: center;
   cursor: pointer;
   padding: 1% 5%;
-  background: #2e3b8b;
+  background: rgb(46, 59, 139);
   color: #fff;
   line-height: 1em;
   transition: 0.3s;
   box-shadow: 6px 6px 3px #666;
-  border: 2px solid #2e3b8b;
+  border: 2px solid rgb(46, 59, 139);
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -978,7 +978,7 @@ html {
 }
 .mail_formBtn:hover {
   box-shadow: unset;
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
   background: #fff;
   border: unset;
 }
@@ -996,6 +996,7 @@ html {
   font-size: 2rem;
   color: #999;
   margin-bottom: 2%;
+  padding: 1%;
 }
 @media screen and (max-width: 768px) {
   .ideal_ttl {
@@ -1003,7 +1004,32 @@ html {
   }
 }
 .ideal_ttl span {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
+}
+.ideal_inner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-top: 5%;
+}
+.ideal_left {
+  width: 50%;
+  text-align: center;
+}
+.ideal_left h3 {
+  padding: 1%;
+  font-size: 1.3rem;
+}
+.ideal_left p {
+  padding: 1%;
+  font-size: 1.3rem;
+}
+.ideal_right {
+  width: 50%;
+  line-height: 1.5;
+}
+.ideal_right p {
+  font-size: 1.3rem;
 }
 
 .president_ttl {
@@ -1017,7 +1043,32 @@ html {
   }
 }
 .president_ttl span {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
+}
+.president_inner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-top: 5%;
+}
+.president_left {
+  width: 50%;
+  text-align: center;
+}
+.president_left h3 {
+  padding: 1%;
+  font-size: 1.3rem;
+}
+.president_left p {
+  padding: 1%;
+  font-size: 1.3rem;
+}
+.president_right {
+  width: 50%;
+  line-height: 1.5;
+}
+.president_right p {
+  font-size: 1.3rem;
 }
 
 .history_ttl {
@@ -1031,7 +1082,7 @@ html {
   }
 }
 .history_ttl span {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
 }
 
 .top {
@@ -1058,7 +1109,7 @@ html {
 .top_copy {
   font-size: 3.5rem;
   text-shadow: #fff 2px 2px;
-  color: #d4a222;
+  color: rgb(212, 162, 34);
 }
 @media screen and (max-width: 1024px) {
   .top_copy {
@@ -1079,7 +1130,7 @@ html {
   }
 }
 .top_copy span {
-  color: #d4a222;
+  color: rgb(212, 162, 34);
   font-size: 2em;
 }
 @media screen and (max-width: 768px) {
@@ -1188,7 +1239,7 @@ html {
   }
 }
 .service_ttl span {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
 }
 @media screen and (max-width: 768px) {
   .service_ttl {
@@ -1218,7 +1269,7 @@ html {
 }
 .service_item {
   width: 50%;
-  background: #2e3b8b;
+  background: rgb(46, 59, 139);
   clip-path: polygon(0 0, 85% 0, 95% 100%, 0% 100%);
   font-size: 1.5rem;
   line-height: 3;
@@ -1267,7 +1318,7 @@ html {
   font-size: 2rem;
   color: #999;
   margin-bottom: 2%;
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
 }
 @media screen and (max-width: 768px) {
   .frow_ttl {
@@ -1275,7 +1326,7 @@ html {
   }
 }
 .frow_ttl span {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
 }
 @media screen and (max-width: 480px) {
   .frow_ttl {
@@ -1296,7 +1347,7 @@ html {
   position: relative;
   width: 12%;
   height: 400px;
-  background: #2e3b8b;
+  background: rgb(46, 59, 139);
   clip-path: polygon(70% 0, 100% 50%, 70% 100%, 0 100%, 0 0);
   color: #fff;
 }
@@ -1458,11 +1509,11 @@ html {
   }
 }
 .about_ttl span {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
 }
 .about_bg {
   position: relative;
-  background-color: #79c3f5;
+  background-color: rgb(121, 195, 245);
   opacity: 0.8;
   height: 230px;
 }
@@ -1569,7 +1620,7 @@ html {
 }
 .about_txtTtl {
   font-size: 2rem;
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
   margin-bottom: 5%;
 }
 .about_ex {
@@ -1602,7 +1653,7 @@ html {
   }
 }
 .contact_ttl span {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
 }
 .contact_box {
   display: flex;
@@ -1615,7 +1666,7 @@ html {
   }
 }
 .contact_left, .contact_right {
-  background: #e9e9e9;
+  background: rgb(233, 233, 233);
   width: 40%;
   height: 250px;
   padding: 2%;
@@ -1632,8 +1683,8 @@ html {
 }
 .contact_leftTtl, .contact_rightTtl {
   font-size: 1.3rem;
-  color: #2e3b8b;
-  border-bottom: 1px solid #d4a222;
+  color: rgb(46, 59, 139);
+  border-bottom: 1px solid rgb(212, 162, 34);
   width: 65%;
   margin: 0 auto;
 }
@@ -1643,7 +1694,7 @@ html {
   }
 }
 .contact_leftTtl span, .contact_rightTtl span {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
   font-size: 1.8rem;
 }
 .contact_txt, .contact_mail {
@@ -1667,7 +1718,7 @@ html {
   opacity: 0.6;
 }
 .contact_name {
-  color: #2e3b8b;
+  color: rgb(46, 59, 139);
   font-size: 1.2rem;
 }
 .contact_tel {
@@ -1690,5 +1741,3 @@ html {
 .contact_time {
   font-size: 1.2rem;
 }
-
-/*# sourceMappingURL=style.css.map */
