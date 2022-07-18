@@ -519,6 +519,11 @@ html {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 480px) {
+  .footer {
+    height: 30vh;
+  }
+}
 .footer_inner {
   width: 100%;
   display: flex;
@@ -600,8 +605,15 @@ html {
   width: 90%;
   text-align: end;
 }
+@media screen and (max-width: 768px) {
+  .footer_copy {
+    margin-top: 3%;
+    text-align: center;
+  }
+}
 .footer_copy small {
   color: #fff;
+  font-size: 0.8rem;
 }
 
 .copy_inner {

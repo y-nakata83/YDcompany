@@ -6,6 +6,9 @@
   height: 35vh;
   @include flex;
   flex-direction: column;
+  @include mq(sp){
+    height: 30vh;
+  }
   &_inner{
     width: 100%;
     @include flex(space-between);
@@ -72,8 +75,13 @@
     margin-top: 1%;
     width: 90%;
     text-align: end;
+    @include mq(tab){
+      margin-top: 3%;
+      text-align: center;
+    }
     small{
       color: $m-white;
+      font-size: .8rem;
     }
   }
 }
