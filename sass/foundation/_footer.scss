@@ -3,8 +3,9 @@
 .footer{
   margin-top: 10%;
   background: $main;
-  height: 30vh;
+  height: 35vh;
   @include flex;
+  flex-direction: column;
   &_inner{
     width: 100%;
     @include flex(space-between);
@@ -65,6 +66,14 @@
         color: $m-white;
         margin-left: 10%;
       }
+    }
+  }
+  &_copy{
+    margin-top: 1%;
+    width: 90%;
+    text-align: end;
+    small{
+      color: $m-white;
     }
   }
 }

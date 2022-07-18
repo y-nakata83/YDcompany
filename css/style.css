@@ -513,10 +513,11 @@ html {
 .footer {
   margin-top: 10%;
   background: #2e3b8b;
-  height: 30vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .footer_inner {
   width: 100%;
@@ -593,6 +594,14 @@ html {
 .footer_infoItem p {
   color: #fff;
   margin-left: 10%;
+}
+.footer_copy {
+  margin-top: 1%;
+  width: 90%;
+  text-align: end;
+}
+.footer_copy small {
+  color: #fff;
 }
 
 .copy_inner {
