@@ -65,6 +65,7 @@
   &_ttl {
     @include ttl;
     text-align: center;
+    width: 50%;
   }
   &_inner {
     width: 100%;
@@ -74,9 +75,6 @@
       margin: 0 auto;
       tr {
         border-bottom: 1px solid $m-black;
-      }
-      td {
-        width: 50%;
       }
     }
   }
