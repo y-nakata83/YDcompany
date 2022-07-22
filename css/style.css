@@ -1029,27 +1029,42 @@ html {
 }
 .ideal_inner {
   width: 100%;
+  height: 40vh;
   position: relative;
   display: flex;
-  margin-top: 5%;
+  overflow: hidden;
+  align-items: center;
+  margin-bottom: 10%;
 }
 .ideal_left {
   width: 50%;
   text-align: center;
 }
 .ideal_left h3 {
-  padding: 1%;
-  font-size: 1.3rem;
+  padding: 4%;
+  font-size: 1.7rem;
 }
 .ideal_left p {
-  padding: 1%;
-  font-size: 1.3rem;
+  padding: 4%;
+  font-size: 1.7rem;
 }
 .ideal_right {
-  width: 50%;
+  width: 45%;
   line-height: 1.5;
 }
+.ideal_right ::before {
+  content: "01";
+  position: absolute;
+  top: -50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  color: rgb(121, 195, 245);
+}
 .ideal_right p {
+  position: absolute;
+  bottom: 0;
+  color: rgb(46, 59, 139);
   font-size: 1.3rem;
 }
 
@@ -1068,27 +1083,58 @@ html {
 }
 .president_inner {
   width: 100%;
+  height: 55vh;
   position: relative;
   display: flex;
-  margin-top: 5%;
+  overflow: hidden;
+  margin-bottom: 10%;
+  border-top: solid 1px #333;
 }
 .president_left {
   width: 50%;
   text-align: center;
 }
 .president_left h3 {
-  padding: 1%;
+  padding: 4%;
   font-size: 1.3rem;
 }
 .president_left p {
   padding: 1%;
   font-size: 1.3rem;
 }
+.president_detail {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.president_img {
+  width: 80%;
+}
+.president_img img {
+  width: 80%;
+}
+.president_name {
+  width: 20%;
+  font-size: 2rem;
+}
 .president_right {
-  width: 50%;
+  position: relative;
+  width: 45%;
   line-height: 1.5;
 }
+.president_right ::before {
+  content: "02";
+  position: absolute;
+  top: -55%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  color: rgb(121, 195, 245);
+}
 .president_right p {
+  position: absolute;
+  bottom: 0;
+  color: rgb(46, 59, 139);
   font-size: 1.3rem;
 }
 
@@ -1109,12 +1155,25 @@ html {
 }
 .history_inner {
   width: 100%;
+  margin-top: 10%;
 }
 .history_left table {
   margin: 0 auto;
+  width: 60%;
 }
 .history_left table tr {
   border-bottom: 1px solid #333;
+}
+.history_left table tr td:nth-child(1) {
+  font-size: 1.3rem;
+  width: 50%;
+  padding: 2%;
+  color: rgb(46, 59, 139);
+}
+.history_left table tr td:nth-child(2) {
+  font-size: 1.3rem;
+  line-height: 2;
+  color: rgb(46, 59, 139);
 }
 
 .top {

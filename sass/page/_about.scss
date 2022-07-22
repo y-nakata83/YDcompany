@@ -7,26 +7,38 @@
   }
   &_inner {
     width: 100%;
+    height: 40vh;
     position: relative;
     display: flex;
-    margin-top: 5%;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 10%;
   }
   &_left {
     width: 50%;
     text-align: center;
     h3 {
-      padding: 1%;
-      font-size: 1.3rem;
+      padding: 4%;
+      font-size: 1.7rem;
     }
     p {
-      padding: 1%;
-      font-size: 1.3rem;
+      padding: 4%;
+      font-size: 1.7rem;
     }
   }
   &_right {
-    width: 50%;
+    width: 45%;
     line-height: 1.5;
+    ::before {
+      content: "01";
+      @include position(-50%,70%);
+      font-size: 10rem;
+      color: $light;
+    }
     p {
+      position: absolute;
+      bottom: 0;
+      color: $main;
       font-size: 1.3rem
     }
   }
@@ -37,15 +49,18 @@
   }
   &_inner {
     width: 100%;
+    height: 55vh;
     position: relative;
     display: flex;
-    margin-top: 5%;
+    overflow: hidden;
+    margin-bottom: 10%;
+    border-top: solid 1px $m-black;
   }
   &_left {
     width: 50%;
     text-align: center;
     h3 {
-      padding: 1%;
+      padding: 4%;
       font-size: 1.3rem;
     }
     p {
@@ -53,11 +68,34 @@
       font-size: 1.3rem;
     }
   }
+  &_detail {
+    @include flex(center,flex-end);
+  }
+  &_img {
+    width: 80%;
+    img {
+      width: 80%;
+    }
+  }
+  &_name {
+    width: 20%;
+    font-size: 2rem;
+  }
   &_right {
-    width: 50%;
+    position: relative;
+    width: 45%;
     line-height: 1.5;
+    ::before {
+      content: "02";
+      @include position(-55%,80%);
+      font-size: 10rem;
+      color: $light;
+    }
     p {
-      font-size: 1.3rem
+      position: absolute;
+      bottom: 0;
+      color: $main;
+      font-size: 1.3rem;
     }
   }
 }
@@ -69,13 +107,26 @@
   }
   &_inner {
     width: 100%;
+    margin-top: 10%;
   }
   &_left {
     table {
       margin: 0 auto;
+      width: 60%;
       tr {
         border-bottom: 1px solid $m-black;
       }
+    }
+    table tr td:nth-child(1) {
+      font-size: 1.3rem;
+      width: 50%;
+      padding: 2%;
+      color: $main;
+    }
+    table tr td:nth-child(2) {
+      font-size: 1.3rem;
+      line-height: 2;
+      color: $main;
     }
   }
 }
