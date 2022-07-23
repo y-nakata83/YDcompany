@@ -46,10 +46,11 @@
 .president {
   &_ttl {
     @include ttl;
+    padding: 5%;
   }
   &_inner {
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     position: relative;
     display: flex;
     overflow: hidden;
@@ -68,15 +69,16 @@
     @include flex(center,flex-end);
   }
   &_img {
-    width: 80%;
+    width: 70%;
     img {
-      width: 80%;
+      width: 90%;
     }
   }
   &_name {
-    padding: 4%;
-    width: 20%;
+    padding-right: 2%;
+    width: 30%;
     font-size: 2rem;
+    color: $main;
   }
   &_right {
     position: relative;
@@ -84,7 +86,7 @@
     line-height: 1.5;
     ::before {
       content: "02";
-      @include position(-55%,80%);
+      @include position(-70%,80%);
       font-size: 10rem;
       color: $light;
     }
@@ -101,9 +103,20 @@
     @include ttl;
     text-align: center;
     width: 50%;
+    padding: 3%;
+    ::before {
+      content: "03";
+      @include position(2%,85%);
+      font-weight: normal;
+      font-size: 10rem;
+      color: $light;
+    }
   }
   &_inner {
+    position: relative;
     width: 100%;
+    overflow: hidden;
+    border-top: solid 1px $m-black;
     margin-top: 10%;
   }
   &_left {
@@ -124,6 +137,15 @@
       font-size: 1.3rem;
       line-height: 2;
       color: $main;
+    }
+  }
+  &_img {
+    margin: 0 auto;
+    position: relative;
+    width: 70%;
+    padding-top: 5%;
+    img {
+      width: 100%;
     }
   }
 }
