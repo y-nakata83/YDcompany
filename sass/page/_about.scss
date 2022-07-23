@@ -59,10 +59,6 @@
   &_left {
     width: 50%;
     text-align: center;
-    h3 {
-      padding: 4%;
-      font-size: 1.3rem;
-    }
     p {
       padding: 1%;
       font-size: 1.3rem;
@@ -78,6 +74,7 @@
     }
   }
   &_name {
+    padding: 4%;
     width: 20%;
     font-size: 2rem;
   }
