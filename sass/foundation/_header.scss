@@ -121,6 +121,9 @@
       &:first-child{
         margin-left: 0;
       }
+      &:hover{
+        border-bottom: $sub solid 2px;
+      }
     }
     a{
       font-size: 1.2rem;
