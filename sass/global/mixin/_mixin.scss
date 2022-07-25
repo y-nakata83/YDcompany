@@ -28,7 +28,7 @@
 
 @mixin ttl {
   font-size: 2rem;
-    color: #999;
+    color: c.$ttl-glay;
     margin-bottom: 2%;
     @include b.mq(tab){
       margin-bottom: 5%;

@@ -7,16 +7,28 @@
   }
   &_inner {
     width: 100%;
-    height: 40vh;
+    @include flex(space-around);
+    padding: 5% 0;
     position: relative;
-    display: flex;
     overflow: hidden;
-    align-items: center;
-    margin-bottom: 10%;
+    &::before{
+      content: "01";
+      display: inline-block;
+      position:absolute;
+      font-size: 10rem;
+      color: $light;
+      opacity: .6;
+      left: 18%;
+      top: 7%;
+      z-index: -1;
+    }
   }
   &_left {
     width: 50%;
     text-align: center;
+    h2{
+      background-color: $m-white;
+    }
     h3 {
       padding: 4%;
       font-size: 1.7rem;
@@ -29,15 +41,7 @@
   &_right {
     width: 45%;
     line-height: 1.5;
-    ::before {
-      content: "01";
-      @include position(-50%,70%);
-      font-size: 10rem;
-      color: $light;
-    }
     p {
-      position: absolute;
-      bottom: 0;
       color: $main;
       font-size: 1.3rem
     }
