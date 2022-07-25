@@ -3,7 +3,7 @@
 .ideal {
   &_ttl {
     @include ttl;
-    padding: 1%;
+    padding: 3%;
   }
   &_inner {
     width: 100%;
@@ -26,9 +26,6 @@
   &_left {
     width: 50%;
     text-align: center;
-    h2{
-      background-color: $m-white;
-    }
     h3 {
       padding: 4%;
       font-size: 1.7rem;
@@ -50,16 +47,26 @@
 .president {
   &_ttl {
     @include ttl;
-    padding: 5%;
+    padding: 13%;
   }
   &_inner {
     width: 100%;
     height: 60vh;
     position: relative;
     display: flex;
-    overflow: hidden;
     margin-bottom: 10%;
     border-top: solid 1px $m-black;
+    &::before {
+      content: "02";
+      display: inline-block;
+      position: absolute;
+      font-size: 10rem;
+      color: $light;
+      opacity: .6;
+      left: 18%;
+      top: 7%;
+      z-index: -1;
+    }
   }
   &_left {
     width: 50%;
@@ -88,12 +95,6 @@
     position: relative;
     width: 45%;
     line-height: 1.5;
-    ::before {
-      content: "02";
-      @include position(-70%,80%);
-      font-size: 10rem;
-      color: $light;
-    }
     p {
       position: absolute;
       bottom: 0;
@@ -107,14 +108,7 @@
     @include ttl;
     text-align: center;
     width: 50%;
-    padding: 3%;
-    ::before {
-      content: "03";
-      @include position(2%,85%);
-      font-weight: normal;
-      font-size: 10rem;
-      color: $light;
-    }
+    padding: 6%;
   }
   &_inner {
     position: relative;
@@ -122,6 +116,17 @@
     overflow: hidden;
     border-top: solid 1px $m-black;
     margin-top: 10%;
+    &::before {
+      content: "03";
+      display: inline-block;
+      position: absolute;
+      font-size: 10rem;
+      color: $light;
+      opacity: .6;
+      left: 18%;
+      top: 1%;
+      z-index: -1;
+    }
   }
   &_left {
     table {

@@ -742,7 +742,7 @@ html {
   display: inline-block;
   right: 0;
   bottom: 0%;
-  padding: 3% 6%;
+  padding: 2% 6%;
   line-height: 2;
   background: rgb(46, 59, 139);
   z-index: 1;
@@ -759,7 +759,7 @@ html {
   position: relative;
   width: 100%;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 .job_buttonInner {
   display: inline-block;
@@ -1039,7 +1039,7 @@ html {
   font-size: 2rem;
   color: #999;
   margin-bottom: 2%;
-  padding: 1%;
+  padding: 3%;
 }
 @media screen and (max-width: 768px) {
   .ideal_ttl {
@@ -1073,9 +1073,6 @@ html {
   width: 50%;
   text-align: center;
 }
-.ideal_left h2 {
-  background-color: #fff;
-}
 .ideal_left h3 {
   padding: 4%;
   font-size: 1.7rem;
@@ -1097,7 +1094,7 @@ html {
   font-size: 2rem;
   color: #999;
   margin-bottom: 2%;
-  padding: 5%;
+  padding: 13%;
 }
 @media screen and (max-width: 768px) {
   .president_ttl {
@@ -1112,9 +1109,19 @@ html {
   height: 60vh;
   position: relative;
   display: flex;
-  overflow: hidden;
   margin-bottom: 10%;
   border-top: solid 1px #333;
+}
+.president_inner::before {
+  content: "02";
+  display: inline-block;
+  position: absolute;
+  font-size: 10rem;
+  color: rgb(121, 195, 245);
+  opacity: 0.6;
+  left: 18%;
+  top: 7%;
+  z-index: -1;
 }
 .president_left {
   width: 50%;
@@ -1146,15 +1153,6 @@ html {
   width: 45%;
   line-height: 1.5;
 }
-.president_right ::before {
-  content: "02";
-  position: absolute;
-  top: -70%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  font-size: 10rem;
-  color: rgb(121, 195, 245);
-}
 .president_right p {
   position: absolute;
   bottom: 0;
@@ -1168,7 +1166,7 @@ html {
   margin-bottom: 2%;
   text-align: center;
   width: 50%;
-  padding: 3%;
+  padding: 6%;
 }
 @media screen and (max-width: 768px) {
   .history_ttl {
@@ -1178,22 +1176,23 @@ html {
 .history_ttl span {
   color: rgb(46, 59, 139);
 }
-.history_ttl ::before {
-  content: "03";
-  position: absolute;
-  top: 2%;
-  left: 85%;
-  transform: translate(-50%, -50%);
-  font-weight: normal;
-  font-size: 10rem;
-  color: rgb(121, 195, 245);
-}
 .history_inner {
   position: relative;
   width: 100%;
   overflow: hidden;
   border-top: solid 1px #333;
   margin-top: 10%;
+}
+.history_inner::before {
+  content: "03";
+  display: inline-block;
+  position: absolute;
+  font-size: 10rem;
+  color: rgb(121, 195, 245);
+  opacity: 0.6;
+  left: 18%;
+  top: 1%;
+  z-index: -1;
 }
 .history_left table {
   margin: 0 auto;
