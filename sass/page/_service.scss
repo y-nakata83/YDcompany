@@ -73,6 +73,9 @@
     span {
       color: $sub;
       font-size: 1.7rem;
+      @include mq(pc) {
+        font-size: 1.4rem;
+      }
     }
   }
 }
@@ -104,33 +107,61 @@
     h3 {
       color: white;
       font-size: 3rem;
-      
+      @include mq(tab) {
+        font-size: 2rem;
+      }
     }
   }
   &_content {
     position: relative;
     width: 100%;
     height: 100vh;
+    @include mq(pc) {
+      height: 115vh;
+    }
+    @include mq(tab) {
+      height: 130vh;
+    }
+    @include mq(sp) {
+      height: 105vh;
+    }
     img {
       position: absolute;
       width: 35%;
       z-index: 2;
+      @include mq(tab) {
+        width: 100%;
+      }
     }
     &Txt {
       position: absolute;
       display: inline-block;
       right: 0;
-      bottom: 0%;
-      padding: 2% 6%;
+      top: 15%;
+      padding: 3% 6%;
       line-height: 2;
       background: $main;
       z-index: 1;
+      @include mq(pc) {
+        padding: 8% 5%;
+      }
+      @include mq(tab) {
+        padding: 3% 6%;
+        top: 20%;
+        z-index: 3;
+      }
       p {
         color: white;
         font-size: 1.3rem;
+        @include mq(pc) {
+          font-size: 1.1rem;
+        }
         span {
           color: $sub;
           font-size: 1.6rem;
+          @include mq(pc) {
+            font-size: 1.4rem;
+          }
         }
       }
     }
@@ -140,6 +171,9 @@
     width: 100%;
     text-align: center;
     padding-top: 10%;
+    @include mq(pc) {
+      padding-top: 0%;
+    }
     &Inner {
       display: inline-block;
       background: $main;
