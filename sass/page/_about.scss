@@ -22,7 +22,9 @@
     @include flex(space-around);
     padding: 5% 0;
     position: relative;
-    overflow: hidden;
+    @include mq(sp) {
+      flex-direction: column;
+    }
     &::before{
       content: "01";
       display: inline-block;
@@ -33,26 +35,60 @@
       left: 18%;
       top: 7%;
       z-index: -1;
+      @include mq(pc) {
+        left: 16%;
+      }
+      @include mq(tab) {
+        left: 12%;
+        font-size: 9rem;
+      }
+      @include mq(sp) {
+        left: 3%;
+        top: 0%;
+      }
     }
   }
   &_left {
     width: 50%;
     text-align: center;
+    @include mq(sp) {
+      width: 80%;
+    }
     h3 {
       padding: 4%;
       font-size: 1.7rem;
+      @include mq(tab) {
+        padding: 14%;
+      }
+      @include mq(sp) {
+        padding: 3%;
+        padding-bottom: 14%;
+      }
     }
     p {
       padding: 4%;
       font-size: 1.7rem;
+      @include mq(pc) {
+        font-size: 1.6rem;
+      }
+      @include mq(sp) {
+        padding: 0%;
+        padding-bottom: 14%;
+      }
     }
   }
   &_right {
     width: 45%;
     line-height: 1.5;
+    @include mq(sp) {
+      width: 80%;
+    }
     p {
       color: $main;
-      font-size: 1.3rem
+      font-size: 1.3rem;
+      @include mq(tab) {
+        font-size: 1.1rem;
+      }
     }
   }
 }
@@ -60,6 +96,17 @@
   &_ttl {
     @include ttl;
     padding: 13%;
+    @include mq(pc) {
+      margin-bottom: 5%;
+    }
+    @include mq(tab) {
+      margin-bottom: 10%;
+      padding: 18%;
+    }
+    @include mq(sp) {
+      margin-bottom: 0%;
+      padding: 10%;
+    }
   }
   &_inner {
     width: 100%;
@@ -68,6 +115,10 @@
     display: flex;
     margin-bottom: 10%;
     border-top: solid 1px $m-black;
+    @include mq(sp) {
+      flex-direction: column;
+      margin-bottom: 40%;
+    }
     &::before {
       content: "02";
       display: inline-block;
@@ -78,11 +129,25 @@
       left: 18%;
       top: 7%;
       z-index: -1;
+      @include mq(pc) {
+        left: 15%;
+        top: 0%;
+      }
+      @include mq(tab) {
+        left: 10%;
+        font-size: 9rem;
+      }
+      @include mq(sp) {
+        left: 30%;
+      }
     }
   }
   &_left {
     width: 50%;
     text-align: center;
+    @include mq(sp) {
+      width: 100%;
+    }
     p {
       padding: 1%;
       font-size: 1.3rem;
@@ -90,9 +155,17 @@
   }
   &_detail {
     @include flex(center,flex-end);
+    @include mq(pc) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
   }
   &_img {
     width: 70%;
+    @include mq(pc) {
+      width: 90%;
+    }
     img {
       width: 90%;
     }
@@ -102,16 +175,38 @@
     width: 30%;
     font-size: 2rem;
     color: $main;
+    @include mq(pc) {
+      width: 45%;
+      padding-right: 0%;
+    }
+    @include mq(tab) {
+      width: 60%;
+      padding-top: 5%;
+    }
+    @include mq(sp) {
+      padding-top: 2%;
+    }
   }
   &_right {
     position: relative;
     width: 45%;
     line-height: 1.5;
+    @include mq(sp) {
+      width: 80%;
+      margin: 0 auto;
+    }
     p {
       position: absolute;
-      bottom: 0;
+      top: 30%;
+      right: 0%;
       color: $main;
       font-size: 1.3rem;
+      @include mq(pc) {
+        top: 7%;
+      }
+      @include mq(tab) {
+        font-size: 1.1rem;
+      }
     }
   }
 }
@@ -121,11 +216,16 @@
     text-align: center;
     width: 50%;
     padding: 6%;
+    @include mq(tab) {
+      padding: 7%;
+    }
+    @include mq(sp) {
+      width: 100%;
+    }
   }
   &_inner {
     position: relative;
     width: 100%;
-    overflow: hidden;
     border-top: solid 1px $m-black;
     margin-top: 10%;
     &::before {
@@ -138,12 +238,26 @@
       left: 18%;
       top: 1%;
       z-index: -1;
+      @include mq(pc) {
+        top: 0%;
+        left: 15%;
+      }
+      @include mq(tab) {
+        font-size: 9rem;
+        left: 10%;
+      }
+      @include mq(sp) {
+        left: 60%;
+      }
     }
   }
   &_left {
     table {
       margin: 0 auto;
       width: 60%;
+      @include mq(sp) {
+        width: 80%;
+      }
       tr {
         border-bottom: 1px solid $m-black;
       }
