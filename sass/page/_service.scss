@@ -147,7 +147,7 @@
       background: $main;
       z-index: 1;
       @include mq(pc) {
-        padding: 8% 5%;
+        padding: 8% 6%;
       }
       @include mq(tab) {
         padding: 3% 10%;
@@ -157,9 +157,6 @@
       p {
         color: white;
         font-size: 1.3rem;
-        @include mq(pc) {
-          font-size: 1.1rem;
-        }
         span {
           color: $sub;
           font-size: 1.6rem;

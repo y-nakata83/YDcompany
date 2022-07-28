@@ -777,7 +777,7 @@ html {
 }
 @media screen and (max-width: 1024px) {
   .job_contentTxt {
-    padding: 8% 5%;
+    padding: 8% 6%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -790,11 +790,6 @@ html {
 .job_contentTxt p {
   color: white;
   font-size: 1.3rem;
-}
-@media screen and (max-width: 1024px) {
-  .job_contentTxt p {
-    font-size: 1.1rem;
-  }
 }
 .job_contentTxt p span {
   color: rgb(212, 162, 34);
