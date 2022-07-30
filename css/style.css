@@ -1217,7 +1217,7 @@ html {
   font-size: 2rem;
   color: #999;
   margin-bottom: 2%;
-  padding: 13%;
+  padding: 10%;
 }
 @media screen and (max-width: 768px) {
   .president_ttl {
@@ -1246,16 +1246,18 @@ html {
 }
 .president_inner {
   width: 100%;
-  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: relative;
   display: flex;
+  padding: 5% 0;
   margin-bottom: 10%;
   border-top: solid 1px #333;
 }
 @media screen and (max-width: 480px) {
   .president_inner {
     flex-direction: column;
-    margin-bottom: 40%;
   }
 }
 .president_inner::before {
@@ -1346,7 +1348,6 @@ html {
   }
 }
 .president_right {
-  position: relative;
   width: 45%;
   line-height: 1.5;
 }
@@ -1357,9 +1358,6 @@ html {
   }
 }
 .president_right p {
-  position: absolute;
-  top: 30%;
-  right: 0%;
   color: rgb(46, 59, 139);
   font-size: 1.3rem;
 }
