@@ -747,25 +747,14 @@ html {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .job_ttl h3 {
+    font-size: 1.6rem;
+  }
+}
 .job_content {
   position: relative;
   width: 100%;
-  height: 100vh;
-}
-@media screen and (max-width: 1024px) {
-  .job_content {
-    height: 115vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  .job_content {
-    height: 130vh;
-  }
-}
-@media screen and (max-width: 480px) {
-  .job_content {
-    height: 105vh;
-  }
 }
 .job_content img {
   position: absolute;
@@ -778,10 +767,9 @@ html {
   }
 }
 .job_contentTxt {
-  position: absolute;
+  position: relative;
   display: inline-block;
-  right: 0;
-  top: 15%;
+  margin: 10% 0% 0% 30%;
   padding: 3% 6%;
   line-height: 2;
   background: #2e3b8b;
@@ -789,24 +777,19 @@ html {
 }
 @media screen and (max-width: 1024px) {
   .job_contentTxt {
-    padding: 8% 5%;
+    padding: 8% 6%;
   }
 }
 @media screen and (max-width: 768px) {
   .job_contentTxt {
-    padding: 3% 6%;
-    top: 20%;
+    padding: 3% 10%;
+    margin: 65% 0% 0% 0%;
     z-index: 3;
   }
 }
 .job_contentTxt p {
   color: white;
   font-size: 1.3rem;
-}
-@media screen and (max-width: 1024px) {
-  .job_contentTxt p {
-    font-size: 1.1rem;
-  }
 }
 .job_contentTxt p span {
   color: #d4a222;
@@ -822,11 +805,6 @@ html {
   width: 100%;
   text-align: center;
   padding-top: 10%;
-}
-@media screen and (max-width: 1024px) {
-  .job_button {
-    padding-top: 0%;
-  }
 }
 .job_buttonInner {
   display: inline-block;
@@ -1192,7 +1170,7 @@ html {
 }
 @media screen and (max-width: 768px) {
   .ideal_left h3 {
-    padding: 14%;
+    padding: 4%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1239,7 +1217,7 @@ html {
   font-size: 2rem;
   color: #999;
   margin-bottom: 2%;
-  padding: 13%;
+  padding: 10%;
 }
 @media screen and (max-width: 768px) {
   .president_ttl {
@@ -1268,16 +1246,18 @@ html {
 }
 .president_inner {
   width: 100%;
-  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: relative;
   display: flex;
+  padding: 5% 0;
   margin-bottom: 10%;
   border-top: solid 1px #333;
 }
 @media screen and (max-width: 480px) {
   .president_inner {
     flex-direction: column;
-    margin-bottom: 40%;
   }
 }
 .president_inner::before {
@@ -1294,7 +1274,6 @@ html {
 @media screen and (max-width: 1024px) {
   .president_inner::before {
     left: 15%;
-    top: 0%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1306,6 +1285,7 @@ html {
 @media screen and (max-width: 480px) {
   .president_inner::before {
     left: 30%;
+    top: 5%;
   }
 }
 .president_left {
@@ -1368,7 +1348,6 @@ html {
   }
 }
 .president_right {
-  position: relative;
   width: 45%;
   line-height: 1.5;
 }
@@ -1379,9 +1358,6 @@ html {
   }
 }
 .president_right p {
-  position: absolute;
-  top: 30%;
-  right: 0%;
   color: #2e3b8b;
   font-size: 1.3rem;
 }

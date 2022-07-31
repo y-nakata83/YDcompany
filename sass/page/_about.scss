@@ -58,7 +58,7 @@
       padding: 4%;
       font-size: 1.7rem;
       @include mq(tab) {
-        padding: 14%;
+        padding: 4%;
       }
       @include mq(sp) {
         padding: 3%;
@@ -95,7 +95,7 @@
 .president {
   &_ttl {
     @include ttl;
-    padding: 13%;
+    padding: 10%;
     @include mq(pc) {
       margin-bottom: 5%;
     }
@@ -110,14 +110,14 @@
   }
   &_inner {
     width: 100%;
-    height: 60vh;
+    @include flex(space-around);
     position: relative;
     display: flex;
+    padding: 5% 0;
     margin-bottom: 10%;
     border-top: solid 1px $m-black;
     @include mq(sp) {
       flex-direction: column;
-      margin-bottom: 40%;
     }
     &::before {
       content: "02";
@@ -131,7 +131,6 @@
       z-index: -1;
       @include mq(pc) {
         left: 15%;
-        top: 0%;
       }
       @include mq(tab) {
         left: 10%;
@@ -139,6 +138,7 @@
       }
       @include mq(sp) {
         left: 30%;
+        top: 5%;
       }
     }
   }
@@ -188,7 +188,6 @@
     }
   }
   &_right {
-    position: relative;
     width: 45%;
     line-height: 1.5;
     @include mq(sp) {
@@ -196,9 +195,6 @@
       margin: 0 auto;
     }
     p {
-      position: absolute;
-      top: 30%;
-      right: 0%;
       color: $main;
       font-size: 1.3rem;
       @include mq(pc) {
